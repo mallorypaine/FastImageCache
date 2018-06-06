@@ -7,6 +7,11 @@ Fast Image Cache is an efficient, persistent, and—above all—fast way to stor
 
 A significant burden on performance for graphics-rich applications like [Path](http://www.path.com) is image loading. The traditional method of loading individual images from disk is just too slow, especially while scrolling. Fast Image Cache was created specifically to solve this problem.
 
+## ⚠️ Notice ⚠️
+Unfortunately [the official repository is abandoned](https://github.com/path/FastImageCache/issues/153). This fork is the successor. I, @mallorypaine, was one of the original developers and I'll continue to maintain Fast Image Cache. Please open any issues and PRs here.
+
+If you happen to know anyone at [Path](https://github.com/path) please get in touch so we can work out a way to keep the official version maintained.
+
 ## Table of Contents
 
 - [Version History](#version-history)
@@ -157,6 +162,12 @@ The `FastImageCacheDemo` Xcode project requires Xcode 5.0 or greater and is conf
 #### CocoaPods
 
 For easy project integration, Fast Image Cache is available as a [CocoaPod](http://cocoapods.org).
+
+⚠️ **Attention:** Until we are able to let the [podspec](https://github.com/CocoaPods/Specs/blob/master/Specs/7/4/a/FastImageCache/1.5.1/FastImageCache.podspec.json) point to this repository, you have to reference it in your Podfile:
+
+```ruby
+  pod "FastImageCache", :git => "https://github.com/mallorypaine/FastImageCache"
+```
 
 #### Manually
 
